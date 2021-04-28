@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 
 class Scanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-
+    
     var captureSession:AVCaptureSession!
     var previewLayer:AVCaptureVideoPreviewLayer!
     var Token = ""
@@ -76,9 +76,8 @@ class Scanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         if captureSession.isRunning{
             captureSession.stopRunning()
         }
-        if Token == "=i123euu901900409ujjifwiwai"{
-            self .performSegue(withIdentifier: "Token", sender: nil)
-        }
+        
+        
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
@@ -93,6 +92,11 @@ class Scanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         }
         dismiss(animated: true)
         
+        if !Token.isEmpty{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+            self.present(vc, animated: true)
+        }
     }
     
     func foundTextFromQR(_ stringValue:String){
@@ -111,10 +115,10 @@ class Scanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         }else{
             print("Error de serialización")
         }
-        
     }
     
     override func prepare(for secuencia: UIStoryboardSegue, sender: Any?){
+        print("Entro Prepare Scanner")
         if secuencia.destination is MenuViewController{
             let vc = secuencia.destination as? MenuViewController
             vc?.token = Token

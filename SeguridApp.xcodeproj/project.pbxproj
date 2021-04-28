@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		173B73192622813700A3AA5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B73182622813700A3AA5C /* MenuViewController.swift */; };
 		173B7322262290E700A3AA5C /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B7321262290E700A3AA5C /* Scanner.swift */; };
 		173B732A2622A1F300A3AA5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B73292622A1F300A3AA5C /* Message.swift */; };
+		173B73492622CC5C00A3AA5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B73482622CC5C00A3AA5C /* HomeViewController.swift */; };
+		173B73552622D9DE00A3AA5C /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B73542622D9DE00A3AA5C /* ScannerViewController.swift */; };
+		17590C772623DC1F0084F3FF /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17590C762623DC1F0084F3FF /* SideMenu.swift */; };
+		17590C7C2623DC6B0084F3FF /* SensoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17590C7B2623DC6B0084F3FF /* SensoresViewController.swift */; };
+		17590C812623DC780084F3FF /* LocacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17590C802623DC780084F3FF /* LocacionesViewController.swift */; };
+		17590C862623DC870084F3FF /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17590C852623DC870084F3FF /* AjustesViewController.swift */; };
 		17EA3A962613A59100912D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA3A952613A59100912D0B /* AppDelegate.swift */; };
 		17EA3A982613A59100912D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA3A972613A59100912D0B /* SceneDelegate.swift */; };
 		17EA3A9D2613A59100912D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EA3A9B2613A59100912D0B /* Main.storyboard */; };
@@ -62,6 +68,12 @@
 		173B73182622813700A3AA5C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		173B7321262290E700A3AA5C /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		173B73292622A1F300A3AA5C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		173B73482622CC5C00A3AA5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		173B73542622D9DE00A3AA5C /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		17590C762623DC1F0084F3FF /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		17590C7B2623DC6B0084F3FF /* SensoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoresViewController.swift; sourceTree = "<group>"; };
+		17590C802623DC780084F3FF /* LocacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocacionesViewController.swift; sourceTree = "<group>"; };
+		17590C852623DC870084F3FF /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
 		17EA3A922613A59100912D0B /* SeguridApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguridApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EA3A952613A59100912D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17EA3A972613A59100912D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,7 +188,12 @@
 				17EA3A952613A59100912D0B /* AppDelegate.swift */,
 				17EA3A972613A59100912D0B /* SceneDelegate.swift */,
 				17EA3A9B2613A59100912D0B /* Main.storyboard */,
+				173B73482622CC5C00A3AA5C /* HomeViewController.swift */,
 				173B73182622813700A3AA5C /* MenuViewController.swift */,
+				17590C762623DC1F0084F3FF /* SideMenu.swift */,
+				17590C7B2623DC6B0084F3FF /* SensoresViewController.swift */,
+				17590C802623DC780084F3FF /* LocacionesViewController.swift */,
+				17590C852623DC870084F3FF /* AjustesViewController.swift */,
 				173B7321262290E700A3AA5C /* Scanner.swift */,
 				17EA3A9E2613A59200912D0B /* Assets.xcassets */,
 				17EA3AA02613A59200912D0B /* LaunchScreen.storyboard */,
@@ -185,6 +202,7 @@
 				17EA3ACE2613B46C00912D0B /* Imagenes */,
 				17EA3AC82613B45700912D0B /* fondo_gris.jpg */,
 				173B73292622A1F300A3AA5C /* Message.swift */,
+				173B73542622D9DE00A3AA5C /* ScannerViewController.swift */,
 			);
 			path = SeguridApp;
 			sourceTree = "<group>";
@@ -335,7 +353,7 @@
 				};
 			};
 			buildConfigurationList = 17EA3A8D2613A59100912D0B /* Build configuration list for PBXProject "SeguridApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -508,11 +526,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17590C862623DC870084F3FF /* AjustesViewController.swift in Sources */,
+				173B73552622D9DE00A3AA5C /* ScannerViewController.swift in Sources */,
 				173B73192622813700A3AA5C /* MenuViewController.swift in Sources */,
 				17EA3A962613A59100912D0B /* AppDelegate.swift in Sources */,
+				17590C772623DC1F0084F3FF /* SideMenu.swift in Sources */,
 				173B732A2622A1F300A3AA5C /* Message.swift in Sources */,
 				17EA3A982613A59100912D0B /* SceneDelegate.swift in Sources */,
 				173B7322262290E700A3AA5C /* Scanner.swift in Sources */,
+				17590C7C2623DC6B0084F3FF /* SensoresViewController.swift in Sources */,
+				17590C812623DC780084F3FF /* LocacionesViewController.swift in Sources */,
+				173B73492622CC5C00A3AA5C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
